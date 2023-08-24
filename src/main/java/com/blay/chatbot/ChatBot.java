@@ -35,7 +35,7 @@ public class ChatBot implements ClientModInitializer {
             }
             operation ^= true;
         }
-        return Math.abs(result % 21) * 5;
+        return Math.abs(result) % 21 * 5;
     }
 
     public static void processChatMessage(Text message) {
@@ -56,9 +56,9 @@ public class ChatBot implements ClientModInitializer {
                 networkHandler.sendChatMessage(">> Author's github profile (you can also find my other social media accounts in here): https://github.com/Blayung");
             } else if (commandName.equals("gayrate") || commandName.equals("gr")) {
                 if (commandArgs.length == 0) {
-                    networkHandler.sendChatMessage(">> " + commandExecutor + "'s gay rate: " + getGayRate(commandExecutor));
+                    networkHandler.sendChatMessage(">> " + commandExecutor + "'s gay rate: " + getGayRate(commandExecutor) + "%");
                 } else {
-                    networkHandler.sendChatMessage(">> " + commandArgs[0] + "'s gay rate: " + getGayRate(commandArgs[0]));
+                    networkHandler.sendChatMessage(">> " + commandArgs[0] + "'s gay rate: " + getGayRate(commandArgs[0]) + "%");
                 }
             } else if (commandName.equals("help") || commandName.equals("info")) {
                 networkHandler.sendChatMessage(">> Blay's Chat Bot help:");
