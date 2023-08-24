@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+
+    "id": "chat-bot",
+    "version": "1.0.0",
+    "name": "Blay's Chat Bot",
+    "description": "This mod turns you into a chat bot.",
+    "icon": "assets/chat-bot/icon.png",
+    "license": "GPL-3.0-only",
+
+    "authors": [
+        "Blay"
+    ],
+
+    "contact": {
+        "homepage": "https://github.com/Blayung/blays-chat-bot",
+        "sources": "https://github.com/Blayung/blays-chat-bot",
+        "issues": "https://github.com/Blayung/blays-chat-bot/issues",
+        "email": "gpewojan1@gmail.com"
+    },
+
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.blay.chatbot.ChatBot"
+        ]
+    },
+    "mixins": [
+        "chat-bot.mixins.json"
+    ],
+
+    "depends": {
+        "fabricloader": "*",
+        "fabric-api": "*",
+        "minecraft": "*",
+        "java": ">=17"
+    }
+}
