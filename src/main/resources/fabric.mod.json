@@ -22,7 +22,7 @@
     "environment": "client",
     "entrypoints": {
         "client": [
-            "com.blay.chatbot.ChatBot"
+            "com.blay.chatbot.BlaysChatBot"
         ]
     },
     "mixins": [
