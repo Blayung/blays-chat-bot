@@ -44,6 +44,8 @@ public class OnChatMixin {
                 LastSeenCommand.execute(commandExecutor, commandArgs);
             } else if (commandName.equals("help") || commandName.equals("info")) {
                 HelpCommand.execute();
+            } else if (commandName.equals("ping")) {
+                PingCommand.execute(commandExecutor, commandArgs);
             } else {
                 MinecraftClient.getInstance().getNetworkHandler().sendChatMessage(">> Unknown command \":" + commandName + "\"");
             }
