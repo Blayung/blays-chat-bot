@@ -23,7 +23,7 @@ public class CommandTips {
                         networkHandler.sendChatMessage(">> Command tip: type ;gayrate to check somebody's gay rate.");
                     } else if (choosenCommandTip == 2) {
                         networkHandler.sendChatMessage(">> Command tip: type ;lastseen to see when I've last seen somebody.");
-                    } else if (choosenCommandTip == 5) {
+                    } else if (choosenCommandTip == 3) {
                         networkHandler.sendChatMessage(">> Command tip: type ;ping to check somebody's ping.");
                     } else {
                         networkHandler.sendChatMessage(">> Command tip: type ;help to list all the available commands.");
