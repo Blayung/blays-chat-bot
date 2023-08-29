@@ -18,15 +18,15 @@ public class CommandTips {
 
                     int choosenCommandTip = BlaysChatBot.random.nextInt(5);
                     if (choosenCommandTip == 0) {
-                        networkHandler.sendChatMessage(">> Command tip: type :hello to say hello to me!");
+                        networkHandler.sendChatMessage(">> Command tip: type ;hello to say hello to me!");
                     } else if (choosenCommandTip == 1) {
-                        networkHandler.sendChatMessage(">> Command tip: type :gayrate to check somebody's gay rate.");
+                        networkHandler.sendChatMessage(">> Command tip: type ;gayrate to check somebody's gay rate.");
                     } else if (choosenCommandTip == 2) {
-                        networkHandler.sendChatMessage(">> Command tip: type :lastseen to see when I've last seen somebody.");
+                        networkHandler.sendChatMessage(">> Command tip: type ;lastseen to see when I've last seen somebody.");
                     } else if (choosenCommandTip == 5) {
-                        networkHandler.sendChatMessage(">> Command tip: type :ping to check somebody's ping.");
+                        networkHandler.sendChatMessage(">> Command tip: type ;ping to check somebody's ping.");
                     } else {
-                        networkHandler.sendChatMessage(">> Command tip: type :help to list all the available commands.");
+                        networkHandler.sendChatMessage(">> Command tip: type ;help to list all the available commands.");
                     }
                 }
                 commandTipCounter++;
