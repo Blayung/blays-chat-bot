@@ -18,7 +18,7 @@ import com.blay.chatbot.command.*;
 
 @Mixin(ChatHud.class)
 public class OnChatMixin {
-    private static final Pattern commandMessagePattern = Pattern.compile("^<[a-zA-Z0-9_]{2,16}> :.+?");
+    private static final Pattern commandMessagePattern = Pattern.compile("^<[a-zA-Z0-9_]{2,16}> ;.+?");
     private static final Pattern leftServerMessagePattern = Pattern.compile("^[a-zA-Z0-9_]{2,16} left");
 
 	@Inject(at = @At("HEAD"), method = "addMessage(Lnet/minecraft/text/Text;Lnet/minecraft/network/message/MessageSignatureData;ILnet/minecraft/client/gui/hud/MessageIndicator;Z)V")
