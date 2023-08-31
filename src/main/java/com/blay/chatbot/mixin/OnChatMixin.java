@@ -34,7 +34,7 @@ public class OnChatMixin {
             String commandExecutor = splittedMessage[0].substring(1, splittedMessage[0].length() - 1);
             String[] commandArgs = Arrays.copyOfRange(splittedMessage, 2, splittedMessage.length);
 
-            if (commandName.equals("hello")) {
+            if (commandName.equals("hello") || commandName.equals("hi")) {
                 HelloCommand.execute(commandExecutor);
             } else if (commandName.equals("github") || commandName.equals("gh") || commandName.equals("author")) {
                 GithubCommand.execute();
@@ -46,6 +46,8 @@ public class OnChatMixin {
                 HelpCommand.execute();
             } else if (commandName.equals("ping")) {
                 PingCommand.execute(commandExecutor, commandArgs);
+            } else if (commandName.equals("iq")) {
+                IQCommand.execute(commandExecutor, commandArgs);
             } else {
                 MinecraftClient.getInstance().getNetworkHandler().sendChatMessage(">> Unknown command \":" + commandName + "\"");
             }
